@@ -1,0 +1,14 @@
+------------------------------------------------------------
+To Run:
+1) Place index.html in a new folder.
+2) Open it in VS Code and click "Go Live" (using Live Server).
+3) Navigate between Home, About, and Contact pages.
+
+------------------------------------------------------------
+Explanation:
+- jQuery Mobile is a framework for building mobile-friendly web apps.
+- It provides ready-made UI components (headers, buttons, navigation).
+- Each "page" is created using <div data-role="page">.
+- Navigation is smooth without reloading.
+- Works seamlessly on both desktop and mobile browsers.
+------------------------------------------------------------

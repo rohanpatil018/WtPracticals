@@ -1,0 +1,30 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+hr {
+  width: 70%;
+  border: none;
+  border-top: 2px solid #cbd5e1;
+  margin: 1.5rem 0;
+}

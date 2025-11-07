@@ -1,0 +1,33 @@
+/* 👦 Child Component Styling */
+.student-card {
+  background-color: #ffffff;
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  width: 380px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.25);
+}
+
+.student-card h3 {
+  color: #1d4ed8;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.student-card p {
+  color: #111827;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.student-card strong {
+  color: #0f172a;
+}

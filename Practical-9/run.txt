@@ -1,0 +1,16 @@
+------------------------------------------------------------
+To run this project:
+1) Make sure index.html and data.txt are in the same folder.
+2) Open the folder in VS Code.
+3) Start Live Server (Right-click index.html → Open with Live Server).
+4) Click "Load Student Data" button.
+5) You’ll see contents of data.txt displayed in the box.
+------------------------------------------------------------
+Explanation:
+- AJAX (Asynchronous JavaScript and XML) lets you fetch data from a file or server 
+  without reloading the page.
+- XMLHttpRequest is used to make an HTTP request.
+- xhr.open() defines the method and file to fetch.
+- xhr.send() sends the request.
+- xhr.onload triggers when the response is ready.
+------------------------------------------------------------

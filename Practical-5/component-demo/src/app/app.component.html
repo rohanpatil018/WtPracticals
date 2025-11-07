@@ -1,0 +1,9 @@
+<div class="app-container">
+  <h2>Parent Component</h2>
+  <p><strong>Parent Message:</strong> {{ message }}</p>
+
+  <hr />
+
+  <!-- Send data to child using property binding -->
+  <app-student [parentMessage]="message"></app-student>
+</div>

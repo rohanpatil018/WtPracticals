@@ -1,0 +1,45 @@
+TO RUN THIS PROJECT
+-------------------
+1️⃣ Create project:
+   ng new pipes-demo
+   cd pipes-demo
+
+2️⃣ Start server:
+   ng serve
+
+3️⃣ Open in browser:
+   http://localhost:4200
+
+----------------------------------------------------------------------
+EXPLANATION
+------------
+This project demonstrates Angular built-in pipes.
+
+Variables defined in app.component.ts:
+- studentName → string
+- course → string
+- todayDate → Date
+- fees → number
+
+Used Angular Pipes in app.component.html:
+1️⃣ uppercase → converts text to uppercase
+2️⃣ lowercase → converts text to lowercase
+3️⃣ date:'fullDate' → formats current date
+4️⃣ currency:'INR':'symbol' → displays fees as ₹ currency
+
+Pipes transform data before displaying it in the template.
+They are useful for formatting values dynamically.
+
+----------------------------------------------------------------------
+STYLING
+-------
+A simple CSS card-style layout is used for clean presentation.
+
+----------------------------------------------------------------------
+
+When running on another PC:
+- Clone or copy project folder.
+- Run `npm install` to restore dependencies.
+- Then `ng serve` to start.
+
+----------------------------------------------------------------------

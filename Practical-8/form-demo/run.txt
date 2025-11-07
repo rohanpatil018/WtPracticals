@@ -1,0 +1,57 @@
+TO RUN THIS PROJECT
+-------------------
+1️⃣ Create project:
+   ng new form-demo
+   cd form-demo
+
+2️⃣ Start Server:
+   ng serve
+
+3️⃣ Open in Browser:
+   http://localhost:4200
+
+----------------------------------------------------------------------
+EXPLANATION
+------------
+This Angular project demonstrates a Template-Driven Form
+built using Standalone Components (Angular 17+).
+
+Fields:
+- Name (text)
+- Email (email)
+- Course (dropdown)
+- Gender (radio buttons)
+- Submit button
+
+When submitted, the entered details are displayed below the form.
+
+----------------------------------------------------------------------
+KEY POINTS
+-----------
+✅ FormsModule is imported directly in the standalone AppComponent.
+✅ [(ngModel)] enables two-way data binding.
+✅ (ngSubmit) event handles form submission.
+✅ *ngIf conditionally displays submitted data.
+
+----------------------------------------------------------------------
+main.ts EXPLANATION
+-------------------
+Instead of AppModule, Angular 17 uses bootstrapApplication() to
+start the standalone AppComponent.
+
+Code:
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app';
+bootstrapApplication(AppComponent);
+
+----------------------------------------------------------------------
+OUTPUT
+-------
+🎓 Student Registration Form
+-----------------------------
+Name: Rohan
+Email: rohan@example.com
+Course: Angular
+Gender: Male
+✅ Submitted Details Shown Below
+----------------------------------------------------------------------

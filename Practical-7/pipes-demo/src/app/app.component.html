@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Angular Pipes Demo</h1>
+  <hr>
+
+  <p><strong>Original Student Name:</strong> {{ studentName }}</p>
+  <p><strong>Uppercase Pipe:</strong> {{ studentName | uppercase }}</p>
+
+  <p><strong>Original Course:</strong> {{ course }}</p>
+  <p><strong>Lowercase Pipe:</strong> {{ course | lowercase }}</p>
+
+  <p><strong>Current Date:</strong> {{ todayDate | date:'fullDate' }}</p>
+
+  <p><strong>Course Fees:</strong> {{ fees | currency:'INR':'symbol' }}</p>
+</div>

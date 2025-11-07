@@ -1,0 +1,32 @@
+Open VS Code → create a folder named http-server.
+Open the VS Code terminal (Ctrl + ~).
+Run the server using:
+node server.js
+
+to run html version file use command node htmlversion.js
+
+
+Explanation:
+We import the built-in http module to handle web requests.
+
+http.createServer() creates a basic web server.
+
+res.writeHead() sets the response header (status 200 = OK).
+
+res.end() sends the response text to the browser.
+
+server.listen(3000) starts the server on port 3000.
+
+
+
+
+for HTML Version File:
+The http module is used to create a basic web server.
+
+res.writeHead() sets the response type to text/html.
+
+The server sends an HTML page using template literals (``).
+
+The server listens on port 3000 and displays the web page in the browser.
+
+for seperate index.html file use fs modulel ajnd import it to join the path.

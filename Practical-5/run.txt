@@ -1,0 +1,73 @@
+Would you like to share pseudonymous usage data? -> Yes or No (your choice)
+Which stylesheet format? -> CSS
+Enable SSR/SSG? -> No
+Create a zoneless app? -> No
+Which AI tools do you want to configure? -> None
+
+src->app->student
+
+To create tsconfig file use command:
+tsc --init
+
+To create package.json file with default values use command:
+npm init -y
+
+-----------------------------------------------------------
+TO run this Angular Project:
+
+1) Create a new Angular project
+ng new component-demo
+
+2) Navigate to the project folder
+cd component-demo
+
+Reinstall dependencies: npm install
+from github: git clone https://github.com/yourusername/component-demo.git
+move to: cd component-demo
+then run npm install
+and then ng serve to build application.
+
+
+show the componets build in seperated file
+
+
+3) Generate a child component
+ng generate component student
+
+4) Run the application
+ng serve
+
+5) Open in browser:
+http://localhost:4200/
+
+-----------------------------------------------------------
+
+Explanation:
+This program demonstrates parent-to-child communication in Angular.
+
+The parent component (app.component.ts) sends data to the child component (student.component.ts) using property binding.
+
+The child component uses @Input() to receive the data and display it along with its own property.
+
+-----------------------------------------------------------
+
+Property Binding & @Input() Explained:
+- [parentMessage]="message" → sends the parent variable value to the child.
+- @Input() parentMessage → receives that value in the child component.
+
+-----------------------------------------------------------
+
+Package.json:
+Created automatically by Angular CLI when the project is initialized.
+It includes project dependencies, scripts, and configuration.
+
+-----------------------------------------------------------
+
+dist Folder:
+Created after running `ng build`.
+Contains the compiled production-ready files for deployment.
+
+
+
+
+

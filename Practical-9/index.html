@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX File Read Example</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    #output {
+      margin-top: 1.5rem;
+      width: 300px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      white-space: pre-line; /* preserves newlines */
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Read Data from Text File using AJAX</h2>
+
+  <button onclick="loadData()">Load Student Data</button>
+
+  <div id="output">
+    <em>Click the button to load data...</em>
+  </div>
+
+  <script>
+    function loadData() {
+      const xhr = new XMLHttpRequest();
+
+      // Step 1: Setup the request
+      xhr.open("GET", "data.txt", true);
+
+      // Step 2: When response is ready
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          document.getElementById("output").textContent = xhr.responseText;
+        } else {
+          document.getElementById("output").textContent = "Error loading file!";
+        }
+      };
+
+      // Step 3: Send the request
+      xhr.send();
+    }
+  </script>
+</body>
+</html>

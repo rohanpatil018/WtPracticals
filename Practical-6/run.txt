@@ -1,0 +1,32 @@
+TO RUN THIS PROJECT
+-------------------
+1️⃣ Open terminal and run:
+   ng serve
+
+2️⃣ Open browser and go to:
+   http://localhost:4200
+
+3️⃣ Use buttons on the top bar to:
+   ➤ Register a user
+   ➤ Login using same credentials
+   ➤ View profile details
+
+------------------------------------------------------------------------------------
+EXPLANATION
+------------
+This Angular app demonstrates component-based architecture and LocalStorage usage.
+
+- Register Component → saves user data in localStorage.
+- Login Component → verifies credentials and stores active user.
+- Profile Component → displays user details from localStorage.
+- App Component → acts as parent controlling navigation.
+
+No backend or API required. Works fully client-side.
+
+------------------------------------------------------------------------------------
+When running on another PC:
+- Clone the project or copy folder.
+- Run `npm install` to install dependencies.
+- Then run `ng serve`.
+
+------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+<div class="nav-bar">
+  <button (click)="changeView('register')">Register</button>
+  <button (click)="changeView('login')">Login</button>
+  <button (click)="changeView('profile')">Profile</button>
+</div>
+
+<hr>
+
+<div class="view-container">
+  <app-register *ngIf="currentView === 'register'"></app-register>
+  <app-login *ngIf="currentView === 'login'"></app-login>
+  <app-profile *ngIf="currentView === 'profile'"></app-profile>
+</div>

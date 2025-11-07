@@ -1,0 +1,29 @@
+Steps to Run in VS Code
+
+Open VS Code → create a folder (e.g., fs-operations).
+
+Inside that folder, create a file named app.js.
+
+Paste the code above into app.js.
+
+Open the terminal in VS Code (Ctrl + ~).
+
+Run the command:
+cd Practical-1
+node app.js
+
+
+Explanation:-
+fs.writeFile() → Creates (or overwrites) a file and writes text into it.
+
+fs.readFile() → Reads the file contents asynchronously.
+
+fs.unlink() → Deletes the specified file.
+
+All three functions are asynchronous, meaning they use callbacks to handle success/errors.
+
+
+UTF-8 stands for Unicode Transformation Format – 8-bit.
+
+It’s a character encoding used to represent text in computers.
+When Node.js (or any other system) reads or writes text files, it needs to know how the characters (like A, @, ₹, 😊) are stored in binary form.

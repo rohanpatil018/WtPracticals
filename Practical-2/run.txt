@@ -1,0 +1,71 @@
+To create tsconfig file use command tsc --init 
+to create package.json file with default values use command: npm init -y
+
+
+
+----------------------------------------------------------------
+TO run this 
+open terminal first and the compile the file and then run
+
+1)Compile: tsc
+
+2) run: node dist/main.js   
+        if dist file is not created then use node main.js
+
+
+-----------------------------------------------------------------------------
+
+Explanation:
+This program demonstrates the use of TypeScript modules and classes.
+
+A Student class (in student.ts) contains properties: name, rollNo, and marks, and methods:
+
+getAverage() → calculates the average of marks.
+
+displayInfo() → displays the student’s details and average marks.
+
+The class is exported and imported in main.ts using ES module syntax (import/export).
+
+Two student objects are created, and their details are displayed using the class methods.
+
+The project is compiled using the TypeScript compiler (tsc) and executed with Node.js.
+------------------------------------------------------------------------------------------
+
+
+Average MArks Claculation Explained: 
+this.marks → is an array of marks, e.g. [85, 90, 78, 88]
+
+.reduce() → adds up all elements of the array step by step
+
+(sum, mark) => sum + mark → means:
+
+take the current total (sum)
+
+add the next mark (mark) to it
+
+0 → is the initial value (starting sum)
+
+So it adds all marks together and stores the result in total.
+
+
+---------------------------------------------------------------------
+
+Reason Why We Use ./student.js Instead of ./student or ./student.ts
+
+When we use ES Modules (with import/export syntax) in Node.js:
+
+Node expects real JavaScript files (like .js) at runtime —
+because after compiling, TypeScript converts .ts → .js.
+
+So when your code runs, the file student.ts no longer exists in the dist folder.
+Only student.js is there.
+------------------------------------------------------------------------
+
+Package.json:-
+"type": "module"
+Tells Node.js to use ES Module syntax (import/export) instead of CommonJS (require/module.exports)
+
+----------------------------------------------
+
+dist stands for “distribution”.
+It’s the folder where TypeScript puts the compiled JavaScript files after converting your .ts (TypeScript) code into .js (JavaScript).

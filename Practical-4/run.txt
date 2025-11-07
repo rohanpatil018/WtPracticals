@@ -1,0 +1,17 @@
+To create tsconfig file use command tsc --init 
+to create package.json file with default values use command: npm init -y
+
+to run this practicla use command:
+1)Compile : tsc
+2)Run : 1)if dis file is created use: node dist/main.json
+        2)if not use : node main.js
+
+
+Explanation:
+mathop.ts defines and exports four arithmetic functions.
+
+main.ts imports these functions and calls them with two hardcoded numbers.
+
+The output displays the results of all four basic math operations.
+
+The "type": "module" and NodeNext settings allow use of import/export in Node.js.
