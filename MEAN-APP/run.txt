@@ -1,9 +1,0 @@
-1) Run the Backend First:-
-    1)cd backend
-    2)npm install(install dependencies)
-    2)node server.js/npx nodemon server.js
-
-
-2)Run frontend in another terminal:
-    1)npm install
-    2)ng serve.

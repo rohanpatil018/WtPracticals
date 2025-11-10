@@ -1,5 +1,0 @@
-Name: ABC
-Roll No: 21
-Course: Web Technologies
-College: XYZ Institute
-Email: XYZ@example.com
