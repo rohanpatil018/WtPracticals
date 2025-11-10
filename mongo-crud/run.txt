@@ -1,0 +1,58 @@
+------------------------------------------------------------
+Setup Instructions
+------------------------------------------------------------
+1) Create a new folder: studentDBApp
+2) Open in VS Code and run:
+   npm init -y
+   npm install express mongoose
+
+3) Create two files:
+   - app.js
+   - usermodel.js
+
+4) Start MongoDB service (ensure localhost:27017 is active)
+
+5) Run the server:
+   node app.js or npx nodemon app.js
+
+6) Open browser or Postman and test:
+   http://localhost:3000/create
+   http://localhost:3000/read
+   http://localhost:3000/update
+   http://localhost:3000/delete
+
+------------------------------------------------------------
+Explanation
+------------------------------------------------------------
+This Node.js + Express + MongoDB application performs CRUD operations
+on a 'students' collection inside 'studentDB'.
+
+Files:
+1️⃣ usermodel.js → Handles MongoDB connection and schema.
+2️⃣ app.js → Defines Express routes for CRUD.
+
+Operations:
+✅ /create → Insert new record
+✅ /read   → Retrieve all records
+✅ /update → Update record by username
+✅ /delete → Delete record by name
+
+------------------------------------------------------------
+Output Example:
+✅ MongoDB Connected
+When visiting /create → Returns JSON of inserted record
+When visiting /read → Displays all user records
+When visiting /update → Shows updated record
+When visiting /delete → Confirms deletion
+------------------------------------------------------------
+
+1)Create a file app.js
+2)create a pcakage.json file:npm init -y
+3)install express: npm i express
+4)install mongoose: npm i mongoose(helps to connect/talk with node server)
+5)npx nodemon app.js-> TO run the file
+
+
+6)create a file named: usermodel.js->for mongoose operations
+
+

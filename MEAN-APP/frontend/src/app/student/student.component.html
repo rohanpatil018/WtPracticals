@@ -1,0 +1,101 @@
+<div class="container mt-4">
+  <h2 class="text-center text-primary mb-4">Student Management</h2>
+
+  <!-- 🧾 Student Form -->
+  <form (ngSubmit)="addStudent()" #studentForm="ngForm" class="card p-4 shadow-sm">
+    <div class="mb-3">
+      <label for="name" class="form-label fw-semibold">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        [(ngModel)]="student.name"
+        name="name"
+        required
+        placeholder="Enter student name"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="age" class="form-label fw-semibold">Age</label>
+      <input
+        type="number"
+        id="age"
+        class="form-control"
+        [(ngModel)]="student.age"
+        name="age"
+        required
+        placeholder="Enter student age"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="course" class="form-label fw-semibold">Course</label>
+      <input
+        type="text"
+        id="course"
+        class="form-control"
+        [(ngModel)]="student.course"
+        name="course"
+        required
+        placeholder="Enter course name"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="marks" class="form-label fw-semibold">Marks</label>
+      <input
+        type="number"
+        id="marks"
+        class="form-control"
+        [(ngModel)]="student.marks"
+        name="marks"
+        required
+        placeholder="Enter marks"
+      />
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-4">
+        {{ isEditing ? 'Update Student' : 'Add Student' }}
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary ms-2 px-4"
+        *ngIf="isEditing"
+        (click)="isEditing = false; student = { name: '', age: '', course: '', marks: '' }"
+      >
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <!-- 📋 Student List -->
+  <div class="mt-5">
+    <h4 class="text-center mb-3 text-secondary">Student Records</h4>
+
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-primary">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+          <th>Marks</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of students">
+          <td>{{ s.name }}</td>
+          <td>{{ s.age }}</td>
+          <td>{{ s.course }}</td>
+          <td>{{ s.marks }}</td>
+          <td>
+            <button class="btn btn-warning btn-sm me-2" (click)="editStudent(s)">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="deleteStudent(s._id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
