@@ -68,7 +68,7 @@ async function deleteStudent(name) {
 // Run Operations (Uncomment the ones you want)
 
 insertStudent();
-// getAllStudents();
-// updateMarks('Rohan Patil', 95);
-// deleteStudent('Rohan Patil');
+getAllStudents();
+// updateMarks('ABC', 95);
+// deleteStudent('ABC');
 
